@@ -171,9 +171,11 @@ export default function Home() {
     // Place it below the "In Words" text block with some spacing (approx 7 units per line)
     const totalAmountY = finalY + splitText.length * 7 + 10;
     doc.text(totalAmountText, marginLeft, totalAmountY);
+  console.log("total amt", totalAmount);
 
     doc.save(`${billNo}.pdf`);
   };
+
 
   return (
     <div style={styles.container}>
