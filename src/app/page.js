@@ -167,7 +167,7 @@ export default function Home() {
     doc.text(splitText, marginLeft, finalY);
 
     doc.setFont("helvetica", "bold");
-    const totalAmountText = `Total Amount: ₹${totalAmount.toFixed(2)}`;
+    const totalAmountText = `Total Amount: Rs. ${totalAmount.toFixed(2)}`;
     // Place it below the "In Words" text block with some spacing (approx 7 units per line)
     const totalAmountY = finalY + splitText.length * 7 + 10;
     doc.text(totalAmountText, marginLeft, totalAmountY);
